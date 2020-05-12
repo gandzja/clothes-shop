@@ -1,0 +1,214 @@
+.related {
+  margin-bottom: 120px;
+}
+.related__title {
+  font-family: 'OpenSansExtraBold', Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.related__title--u {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.related-title__orange {
+  color: #ff5912;
+}
+.related-title__descr {
+  font-family: 'OpenSansRegular', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  color: #495662;
+}
+
+.product-view {
+  background-color: #ffffff;
+  padding: 105px 0 135px;
+  margin-bottom: 120px;
+}
+.container.container-product-view {
+  max-width: 1025px;
+}
+.product-view__wrap {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+}
+.product-view__gallery {
+  text-align: center;
+  width: 100%;
+  max-width: 325px;
+}
+.product-view__slider {
+}
+.product-view__item {
+}
+.product-view__img {
+  display: block;
+  margin: 0 auto;
+}
+.js-product-view__pager {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-view-pager__link {
+  display: inline-block;
+  width: 95px;
+  height: 70px;
+  background-color: #f4f6f8;
+  position: relative;
+}
+.product-view-pager__link.active::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  background-color: #ff5912;
+  opacity: 0.9;
+}
+.product-view-pager__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.product-view__title {
+  font-family: 'OpenSansExtraBold', Arial, Helvetica, sans-serif;
+  font-size: 52px;
+  line-height: 1.2;
+  color: #ff5912;
+  margin-bottom: 30px;
+}
+.product-view__goods {
+  font-family: 'OpenSansSemiBold', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 29px;
+  color: #3c4751;
+  margin-bottom: 35px;
+}
+.product-view__descr {
+  font-family: 'OpenSansRegular', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 29px;
+  color: #495662;
+  margin-bottom: 40px;
+}
+.product-view__settings {
+  padding: 24px 0;
+  border-top: 1px solid #edeff1;
+  border-bottom: 1px solid #edeff1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'OpenSansBold', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 60px;
+}
+.product-view__sizes {
+}
+.product-view__sizes span {
+  margin-right: 10px;
+}
+.product-view-sizes-list {
+  display: inline-block;
+}
+.product-view-sizes-list__item {
+  font-size: 14px;
+  display: inline-block;
+}
+.product-view-sizes-list__item:not(:last-child)::after {
+  content: ' - ';
+}
+.product-view-sizes-list__item span {
+  margin: 0;
+}
+.product-view-sizes-list__item:hover span,
+.product-view-sizes-list__item.active span {
+  cursor: pointer;
+  font-size: 18px;
+  color: #ff5912;
+}
+.product-view__choose-quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-view__choose-quantity span {
+  margin-right: 20px;
+}
+.choose-quantity {
+}
+.quantity-up {
+}
+.quantity-count {
+  color: #ff5912;
+}
+.quantity-down {
+}
+
+.product-view__actions {
+  font-family: 'OpenSansSemiBold', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-view__prise {
+}
+.product-view__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-view__links {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 30px;
+}
+.product-view__links.web {
+  width: 22px;
+  height: 22px;
+  background: url('../images/world.png') center no-repeat;
+}
+.product-view__links.buy {
+  width: 22px;
+  height: 22px;
+  background: url('../images/add_to_cart_ico_grey.png') center no-repeat;
+}
+.product-view__links.favorites {
+  width: 22px;
+  height: 22px;
+  background: url('../images/like_ico.png') center no-repeat;
+}
+.product-view__buy {
+  padding: 18px 24px;
+  background-color: #ff5912;
+  border-radius: 24.5px;
+  font-family: 'OpenSansSemiBold', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+@media (max-width: 1024px) {
+  .related {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .related {
+    margin-bottom: 40px;
+  }
+}

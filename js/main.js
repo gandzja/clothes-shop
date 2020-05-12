@@ -8,6 +8,12 @@ $(document).ready(function () {
   //   pagerCustom: 'product-item__colors',
   //   controls: false,
   // });
+
+  $('.product-view__slider').bxSlider({
+    pagerCustom: 'js-product-view__pager',
+    controls: false,
+  });
+
   // ! выбор размера
   $('.sizes-list__item').click(function () {
     $(this).toggleClass('active');

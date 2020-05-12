@@ -1,0 +1,95 @@
+.all-products {
+  padding-top: 120px;
+  margin-bottom: 120px;
+}
+.all-products-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.all-products__filter {
+  width: 100%;
+  max-width: 270px;
+}
+.filter-item {
+  margin-bottom: 30px;
+  padding: 40px 30px;
+  background-color: #ffffff;
+}
+.filter-title {
+  display: block;
+  font-family: 'OpenSansExtraBold', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  padding-bottom: 40px;
+  color: #ff5912;
+}
+.filter-line {
+}
+.filter-line--price {
+  display: flex;
+  justify-content: space-between;
+}
+.filter-line--price input {
+  margin-left: 10px;
+  width: 45px;
+  height: 25px;
+  background-color: #edf0f2;
+  outline: none;
+  border: none;
+}
+.filter__price-from {
+  font-family: 'OpenSansSemiBold', Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  width: 45%;
+}
+.filter__price-to {
+  font-family: 'OpenSansSemiBold', Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  width: 45%;
+}
+.filter-line:not(:last-child) {
+  margin-bottom: 35px;
+}
+input[type='radio'] {
+  display: none;
+}
+input[type='radio']:checked + label {
+  color: #ff5912;
+}
+input[type='range'] {
+  width: 100%;
+}
+label {
+  font-family: 'OpenSansSemiBold', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+input[type='checkbox'] {
+  display: none;
+}
+
+input[type='checkbox']:checked + label {
+  color: #ff5912;
+  position: relative;
+}
+input[type='checkbox'] + label {
+  position: relative;
+}
+input[type='checkbox'] + label::before {
+  content: '';
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: #edf0f2;
+  margin-right: 15px;
+}
+input[type='checkbox']:checked + label::before {
+  border: 4px solid #ff5912;
+  background-color: #ffffff;
+}
+.all-products__show {
+  width: 100%;
+  max-width: 870px;
+}

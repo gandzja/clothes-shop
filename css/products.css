@@ -23,8 +23,6 @@
   padding-bottom: 40px;
   color: #ff5912;
 }
-.filter-line {
-}
 .filter-line--price {
   display: flex;
   justify-content: space-between;
